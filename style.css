@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
 }
 html,
@@ -10,28 +18,50 @@ body {
   width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(lightseagreen), color-stop(lightskyblue), to(deeppink));
+  background: -o-linear-gradient(left, lightseagreen, lightskyblue, deeppink);
   background: linear-gradient(to right, lightseagreen, lightskyblue, deeppink);
 }
 .container {
   height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 h1 {
   color: #fff;
   text-shadow: 0 0 5px rgb(111, 110, 110);
+  text-align: center;
 }
 .game {
   width: 21rem;
   height: 21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   text-align: center;
 }
@@ -40,7 +70,8 @@ h1 {
   width: 7rem;
   background-color: #fff;
   border: none;
-  box-shadow: 0 0 5px gray;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
   border-radius: 6px;
   font-size: 4rem;
   cursor: pointer;
@@ -48,12 +79,16 @@ h1 {
 }
 #reset-btn {
   padding: 14px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(lightseagreen), to(lightskyblue));
+  background: -o-linear-gradient(left, lightseagreen, lightskyblue);
   background: linear-gradient(to right, lightseagreen, lightskyblue);
   border: none;
   border-radius: 6px;
   color: #fff;
   margin-top: 20px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 #reset-btn:hover {
@@ -61,21 +96,36 @@ h1 {
 }
 .msg-container {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1rem;
   padding-top: 100px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 #new-btn {
   padding: 14px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(lightseagreen), to(lightskyblue));
+  background: -o-linear-gradient(left, lightseagreen, lightskyblue);
   background: linear-gradient(to right, lightseagreen, lightskyblue);
   border: none;
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 #new-btn:hover {
@@ -94,5 +144,5 @@ h1 {
 }
 h1 {
   text-align: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }

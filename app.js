@@ -4,7 +4,12 @@ let msg = document.querySelector(".msg");
 let newGame = document.querySelector("#new-btn");
 let resetGame = document.querySelector("#reset-btn");
 
-
+// let smile = document.querySelector("#smile");
+// smile.onclick = () => {
+//   smile.classList.remove("bx-wink-smile");
+//   smile.classList.add("bx-smile");
+//   console.log("hello bacho");
+// };
 
 let turnO = true;
 
@@ -19,7 +24,6 @@ const winPattern = [
   [6, 7, 8],
 ];
 
-
 let showWinner = (winner) => {
   msg.innerText = `Congratulations Winner is ${winner}`;
   msgContainer.classList.remove("hide");
@@ -28,7 +32,7 @@ let showWinner = (winner) => {
   });
 };
 
-// New Game 
+// New Game
 
 newGame.onclick = () => {
   msgContainer.classList.add("hide");
@@ -38,7 +42,7 @@ newGame.onclick = () => {
   }
 };
 
-//  Reset Game 
+//  Reset Game
 
 resetGame.onclick = () => {
   turnO = true;
@@ -48,8 +52,8 @@ resetGame.onclick = () => {
   });
   msgContainer.classList.add("hide");
 };
- 
-// Check Winner 
+
+// Check Winner
 
 let checkWinner = () => {
   for (let pattern of winPattern) {
@@ -65,7 +69,6 @@ let checkWinner = () => {
     }
   }
 };
-
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
